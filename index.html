@@ -2,35 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Doi Tien</title>
-    <script src="main.js"></script>
-    <link rel="stylesheet" herf="main.js">
+    <title>Title</title>
 </head>
 <body>
-<div class="app">
-    <h2 class="title">Chuyển đổi tiền tệ</h2>
-    <div class="input-area">
-        <div class="input-area__box">
-            <p>Amount</p>
-            <input id="amount" type="text">
-        </div>
-        <div class="input-area__box">
-            <p>From Currency</p>
-            <select name="" id="">
-                <option value="">VND</option>
-            </select>
-        </div>
-        <div class="input-area__box">
-            <p>To Currency</p>
-            <select name="" id="">
-                <option value="">USD</option>
-            </select>
-        </div>
-        <div class="submit-box">
-            <button onclick="exchangeCurrency()">convert</button>
-        </div>
-    </div>
-    <p id="result"></p>
-</div>
+    <h1>A Web Page</h1>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            let contentP=document.getElementById('demo').innerText;
+            console.log(contentP);
+            if (contentP ==='A Paragraph' ) {
+                document.getElementById("demo").innerHTML = "Paragraph changed.";
+            }else {
+                document.getElementById("demo").innerHTML= "A Paragraph" ;
+            }
+    }
+</script>
+
 </body>
 </html>
